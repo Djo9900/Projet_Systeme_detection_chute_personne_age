@@ -1,6 +1,5 @@
 # Projet Étudiant : Système de Détection de Chute pour Senior
 
-Salut ! Bienvenue sur le dépôt de mon projet. 
 
 L'objectif de ce travail est de concevoir un **système embarqué capable de détecter les chutes**, pensé spécifiquement pour la sécurité des personnes âgées. C'est un projet technique complet qui fait le pont entre l'intelligence artificielle (machine learning) et l'électronique embarquée (microcontrôleur).
 
@@ -26,9 +25,13 @@ Ce dossier contient le code qui tourne physiquement sur la carte électronique.
 
 ## La démarche technique (Comment ça marche ?)
 
+Voici le schéma global représentant l'architecture de notre système :
+
+![Architecture du système](architecture.jpg)
+
 Si vous souhaitez comprendre le flux du projet, voici la logique que j'ai suivie :
-1.  **Entraînement (Cloud) :** Le modèle d'intelligence artificielle est d'abord entraîné sur Python, car cela demande de la puissance de calcul.
-2.  **Conversion (TinyML) :** Une fois que l'IA est assez précise, le modèle est "figé" et converti en un fichier d'en-tête très léger (`.h`).
-3.  **Inférence (Embarqué) :** L'Arduino utilise ce fichier léger pour faire ses prédictions en direct de manière totalement autonome, avec ses propres petites ressources de calcul.
+1. **Entraînement (Cloud) :** Le modèle d'intelligence artificielle est d'abord entraîné sur Python, car cela demande de la puissance de calcul.
+2. **Conversion (TinyML) :** Une fois que l'IA est assez précise, le modèle est "figé" et converti en un fichier d'en-tête très léger (`.h`).
+3. **Inférence (Embarqué) :** L'Arduino utilise ce fichier léger pour faire ses prédictions en direct de manière totalement autonome, avec ses propres petites ressources de calcul.
 
 N'hésitez pas à lire le cahier des charges pour plus de détails sur le matériel choisi et les scénarios d'usage. Toute remarque ou piste d'amélioration est la bienvenue !
