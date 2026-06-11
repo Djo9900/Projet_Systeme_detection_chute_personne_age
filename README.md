@@ -27,7 +27,7 @@ Ce dossier contient le code qui tourne physiquement sur la carte électronique.
 
 Voici le schéma global représentant l'architecture de notre système :
 
-![Architecture du système](achitecture.jpg)
+![Architecture du système](architecture.jpg)
 
 Si vous souhaitez comprendre le flux du projet, voici la logique que j'ai suivie :
 1. **Entraînement (Cloud) :** Le modèle d'intelligence artificielle est d'abord entraîné sur Python, car cela demande de la puissance de calcul.
